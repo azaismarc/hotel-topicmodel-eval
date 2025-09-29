@@ -75,7 +75,7 @@ Pour comparer ces hôtels :
     st.header("Participez à l’étude")
     st.markdown("""
     Pour contribuer à l’étude, merci de renseigner vos réponses dans le formulaire suivant :  
-    👉 [Remplir le Google Form](https://docs.google.com/forms/d/e/1FAIpQLScC-BQ7IFnl71rBlxpLRrOE7qD6coHpMl6kc3kjCeOgiMZB-Q/viewform?usp=pp_url&entry.1185562123=Chambre+:+&entry.638112531=Emplacement+:+&entry.254278379=Ambiance+:+&entry.2144763826=Rapport+qualit%C3%A9-prix+:+&entry.1804927376=Personnel+:+)
+    👉 [Remplir le Google Form](https://docs.google.com/forms/d/e/1FAIpQLScC-BQ7IFnl71rBlxpLRrOE7qD6coHpMl6kc3kjCeOgiMZB-Q/viewform?usp=header)
     """)
 
 # Mise en page en deux colonnes
