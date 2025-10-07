@@ -31,11 +31,6 @@ with st.sidebar:
 
     st.markdown("# 🏨 Hôtels étudiés")
 
-    st.markdown("""
-    Vous avez accès aux **sites web** des hôtels pour vous renseigner et êtes libres d’effectuer toutes les recherches que vous jugez utiles.  
-    
-    **Veuillez toutefois indiquer les recherches effectuées dans le formulaire Google** que vous devrez remplir.
-    """)
     st.image(
         "public/hotel-le-rupella-la-rochelle-charente-maritime-photo-5.webp",
         caption="Hôtel Le Rupella"
@@ -52,14 +47,18 @@ with st.sidebar:
     st.markdown("""
         Nous souhaitons répondre à la **question de recherche suivante**:  
         *Quels thèmes exprimés diffèrent significativement entre les deux hôtels selon le sentiment ou la fréquence ?*
-    
-Pour comparer ces hôtels :
+        
+                 
+    Vous avez accès aux **sites web** des hôtels pour vous renseigner et êtes libres d’effectuer toutes les recherches que vous jugez utiles.  
 
-- Nous procéderons à une classification automatique des avis par thématique à l’aide d’une IA ;
-- Le **sentiment** sera déterminé en fonction de la section du commentaire : « points forts » ou « points faibles ».  
-- Il n’est **pas nécessaire de l’indiquer explicitement**, sauf si vous souhaitez adopter une **autre granularité** de sentiment.
-    
+    Vous disposez également, **à droite de l’écran**, d’une **visualisation globale** des mots et commentaires regroupés par thématique  
+    (un mode d’emploi est disponible dans le menu déroulant à droite).  
+
+    **À la fin de l’étude, vous devrez indiquer ce qui a motivé vos choix**  
+    (recherche web, visualisation par mots/thématiques, barre de recherche, etc.)  
+    dans le **formulaire Google** à remplir.
     """)
+    
 
     st.subheader("📌 Thèmes à définir")
     st.markdown("""
@@ -78,12 +77,20 @@ Pour comparer ces hôtels :
         st.markdown(f"- **{topic}**")
 
     st.markdown("""
-    ✍️ **Vous pouvez ajouter d’autres thèmes** que vous jugez pertinents  
+    **Vous pouvez ajouter d’autres thèmes** que vous jugez pertinents  
     (par ex. : *propreté, petit-déjeuner, installations, services additionnels…*).  
     Chaque définition doit être **claire et opérationnelle** pour guider l’annotation.
     """)
 
-    st.header("Participez à l’étude")
+    st.subheader("⚙️ Précisions")
+
+    st.markdown("""
+    - Une **classification automatique** des avis par thématique sera réalisée à l’aide d’une IA ;  
+    - Le **sentiment** sera déterminé en fonction de la section du commentaire : « points forts » ou « points faibles » ;  
+    - Il n’est donc **pas nécessaire d’indiquer explicitement le sentiment**, sauf si vous souhaitez adopter une **granularité différente**.
+    """)
+
+    st.header("✍️ Participez à l’étude")
     st.markdown("""
     Pour contribuer à l’étude, merci de renseigner vos réponses dans le formulaire suivant :  
     👉 [Remplir le Google Form](https://docs.google.com/forms/d/e/1FAIpQLScC-BQ7IFnl71rBlxpLRrOE7qD6coHpMl6kc3kjCeOgiMZB-Q/viewform?usp=header)
