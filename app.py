@@ -21,12 +21,21 @@ import streamlit as st
 with st.sidebar:
 
     st.markdown("""
-        Nous souhaitons connaître les différences d'interprétation et leurs conséquences sur l'analyse qualitative réalisée par une IA.  
-        Cette expérience servira de guide pour comparer les expériences clients dans deux hôtels de La Rochelle.
+    Nous voulons comprendre comment différentes interprétations peuvent mener à des définitions variées d’un même thème entre plusieurs personnes, et quelles en sont les conséquences sur l’analyse qualitative réalisée par une IA.  
+    
+    *Par exemple : la **salle de bain** fait-elle partie de la **chambre**, ou s’agit-il d’un thème à part ?*
+
+    
+    Pour cela, nous prendrons un exemple simple : **la comparaison de deux hôtels à La Rochelle**.
     """)
 
     st.markdown("# 🏨 Hôtels étudiés")
 
+    st.markdown("""
+    Vous avez accès aux **sites web** des hôtels pour vous renseigner et êtes libres d’effectuer toutes les recherches que vous jugez utiles.  
+    
+    **Veuillez toutefois indiquer les recherches effectuées dans le formulaire Google** que vous devrez remplir.
+    """)
     st.image(
         "public/hotel-le-rupella-la-rochelle-charente-maritime-photo-5.webp",
         caption="Hôtel Le Rupella"
@@ -41,20 +50,22 @@ with st.sidebar:
 
     st.header("🎯 Votre tâche")
     st.markdown("""
-        Nous souhaitons répondre à la **question de recherche suivante** :  
-            - Quels thèmes exprimés diffèrent significativement entre les deux hôtels selon le sentiment ou la fréquence ?
+        Nous souhaitons répondre à la **question de recherche suivante**:  
+        *Quels thèmes exprimés diffèrent significativement entre les deux hôtels selon le sentiment ou la fréquence ?*
     
 Pour comparer ces hôtels :
 
 - Nous procéderons à une classification automatique des avis par thématique à l’aide d’une IA ;
-- Le sentiment sera déterminé selon la section du commentaire, soit « points forts », soit « points faibles ».
-
-    ⚠️ 5 thèmes sont déjà définis – vous devez **compléter leurs définitions**.  
-    ⚠️ Vous pouvez ensuite **ajouter d’autres thèmes** que vous jugez pertinents avec leurs définitions.  
-    ⚠️ Chaque définition doit être **aussi précise que possible**.
+- Le **sentiment** sera déterminé en fonction de la section du commentaire : « points forts » ou « points faibles ».  
+- Il n’est **pas nécessaire de l’indiquer explicitement**, sauf si vous souhaitez adopter une **autre granularité** de sentiment.
+    
     """)
 
     st.subheader("📌 Thèmes à définir")
+    st.markdown("""
+    ⚠️ 5 thèmes sont déjà définis – vous devez **compléter leurs définitions**.  
+    ⚠️ Chaque définition doit être **aussi précise que possible**.
+    """)
     topics = {
         "Chambre": "Qualité, taille, propreté, confort et équipements de la chambre.",
         "Emplacement": "Localisation de l’hôtel dans la ville, proximité des attractions et accessibilité.",
@@ -77,7 +88,6 @@ Pour comparer ces hôtels :
     Pour contribuer à l’étude, merci de renseigner vos réponses dans le formulaire suivant :  
     👉 [Remplir le Google Form](https://docs.google.com/forms/d/e/1FAIpQLScC-BQ7IFnl71rBlxpLRrOE7qD6coHpMl6kc3kjCeOgiMZB-Q/viewform?usp=header)
     """)
-
 # Mise en page en deux colonnes
 col1, col2 = st.columns([3, 1])  # gauche large, droite étroite
 
