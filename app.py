@@ -46,7 +46,7 @@ with st.sidebar:
     st.header("🎯 Votre tâche")
     st.markdown("""
         Nous souhaitons répondre à la **question de recherche suivante**:  
-        *Quels thèmes exprimés diffèrent significativement entre les deux hôtels selon le sentiment ou la fréquence ?*
+        *Entre deux hôtels situés à La Rochelle, lequel se distingue le plus favorablement ?*
         
                  
     Vous avez accès aux **sites web** des hôtels pour vous renseigner et êtes libres d’effectuer toutes les recherches que vous jugez utiles.  
